@@ -140,6 +140,12 @@ ul {
   clear: both;
 }
 
+div button {
+  margin: 10px;
+  font-family: Georgia, serif;
+  font-size: .75em;
+}
+
 
 @keyframes App-logo-spin {
   from {
