@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-function Hog({name, image, specialty, greased, highestmedal}) {
+function Hog({name, image, specialty, weight, greased, highestmedal}) {
     const [isClicked, setIsClicked] = useState(false);
 
     const otherDetails =  <div className="normalText">
-        <p>Specialty: {specialty}<br />{greased ? "Greased" : "Not Greased"}<br />Highest Medal: {highestmedal.charAt(0).toUpperCase() + highestmedal.slice(1)}</p>
+        <p>Specialty: {specialty}<br />Weight: {weight}<br />{greased ? "Greased" : "Not Greased"}<br />Highest Medal: {highestmedal.charAt(0).toUpperCase() + highestmedal.slice(1)}</p>
         </div>;
 
     function displayDetails() {
